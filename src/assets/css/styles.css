@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "Barrio";
+    src: url("fonts/Barrio.ttf");
+}
+@font-face {
+    font-family: "Bebas";
+    src: url("fonts/BebasN.ttf");
+}
+@font-face {
+    font-family: "Carter";
+    src: url("fonts/CarterOne.ttf");
+}
+@font-face {
+    font-family: "Cherry";
+    src: url("fonts/Cherry.ttf");
+}
+@font-face {
+    font-family: "Game";
+    src: url("fonts/Game.ttf");
+}
+@font-face {
+    font-family: "Macondo";
+    src: url("fonts/Macondo.ttf");
+}
+@font-face {
+    font-family: "Monton";
+    src: url("fonts/Monton.ttf");
+}
+@font-face {
+    font-family: "Rigterus";
+    src: url("fonts/Rigterus.ttf");
+}
+@font-face {
+    font-family: "Underdog";
+    src: url("fonts/Underdog.ttf");
+}
+@font-face {
+    font-family: "Zcool";
+    src: url("fonts/Zcool.ttf");
+}
+@font-face {
+    font-family: "ZillaBold";
+    src: url("fonts/ZillaBold.ttf");
+}
+@font-face {
+    font-family: "ZillaRegular";
+    src: url("fonts/ZillaRegular.ttf");
+}
+
+body{
+    background:pink;
+    font-family: "ZillaBold";
+}
