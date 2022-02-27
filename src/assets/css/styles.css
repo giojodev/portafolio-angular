@@ -1,3 +1,5 @@
+
+/*  IMPORTAR FUENTES CUSTOM */
 @font-face {
     font-family: "Barrio";
     src: url("fonts/Barrio.ttf");
@@ -46,8 +48,15 @@
     font-family: "ZillaRegular";
     src: url("fonts/ZillaRegular.ttf");
 }
-
+/*  GENERALES   */
+*{
+    margin:0px;
+    padding: 0px;
+}
 body{
     background:pink;
-    font-family: "ZillaBold";
+    font-family: "Rigterus";
+    font-size: 20px;
+    background: url('../img/greypat.jpg');
+    position: fixed;
 }
