@@ -4,28 +4,36 @@
     <form #projectForm="ngForm" (ngSubmit)="onSubmit(projectForm)">
         <p>
             <label for="name">Nombre</label>
-            <input type="text" name="name" #name="ngModel" [(ngModel)]="project.name">
-            
+            <input type="text" name="name" #name="ngModel" [(ngModel)]="project.name" required>
+            <span class="form_error" *ngIf="name.touched && !name.valid">
+                El nombre es obligatorio
+            </span>
         </p>
         <p>
             <label for="description">Descripcion</label>
-            <input type="text" name="description" #name="ngModel" [(ngModel)]="project.description">
-            
+            <textarea required name="description" #description="ngModel" [(ngModel)]="project.description"></textarea>
+            <span class="form_error" *ngIf="description.touched && !description.valid">
+                La descripcion es obligatoria
+            </span>
         </p>
         <p>
             <label for="category">Categoria</label>
-            <input type="text" name="category" #name="ngModel" [(ngModel)]="project.categoru">
-            
+            <input type="text"  required name="category" #category="ngModel" [(ngModel)]="project.categoru">
+            <span class="form_error" *ngIf="category.touched && !category.valid">
+                La Categoria es obligatoria
+            </span>
         </p>
         <p>
             <label for="year">Año de lanzamiento</label>
-            <input type="number" name="year" #name="ngModel" [(ngModel)]="project.year">
+            <input type="number"  name="year" #year="ngModel" [(ngModel)]="project.year">
             
         </p>
         <p>
             <label for="langs">Lenguajes de programacion</label>
-            <input type="text" name="langs" #name="ngModel" [(ngModel)]="project.langs">
-            
+            <input type="text" required name="langs" #langs="ngModel" [(ngModel)]="project.langs">
+            <span class="form_error" *ngIf="langs.touched && !langs.valid">
+                El lenguaje es obligatorio
+            </span>
         </p>
         <p>
             <label for="image">Imagen del proyecto</label>
@@ -33,7 +41,7 @@
             
         </p>
 
-        <button type="submit" >Enviar</button>
+        <button type="submit" [disabled]="!projectForm.valid">Enviar</button>
     </form>
 
 </div>

@@ -195,12 +195,20 @@ article.about{
 .container{
     padding:50px;
     padding-top: 10px;
+    background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .container h2{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-bottom: 1px solid #023047;
     margin-bottom: 15px;
     padding-bottom: 10px;
+    color:#023047;
+    
 }
 form{
     width: 50%;
@@ -215,7 +223,7 @@ form label{
 }
 form input[type="text"],
 form input[type="number"],
-form input[type="textarea"],
+form textarea,
 form input[type="email"]{
     width: 70%;
     padding: 5px;
@@ -223,7 +231,7 @@ form input[type="email"]{
 form button,
 form input[type="submit"]{
     font-size: 17px;
-    padding: 5px;
+    padding: 10px;
     display: block;
     margin-top: 15px ;
     border-radius: 15px;
@@ -232,4 +240,32 @@ form input[type="submit"]{
     font-family: sans-serif;
     font-weight: bold;
     width: 20%;
+    border: 1px solid #011d2b;
+    cursor: pointer;
+}
+
+form button:hover,
+form input[type="submit"]:hover{
+    font-size: 17px;
+    padding: 10px;
+    display: block;
+    margin-top: 15px ;
+    border-radius: 15px;
+    background-color: #056392;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    width: 20%;
+    border: 1px solid #011d2b;
+    cursor: pointer;
+}
+form input[disabled]{
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+.form_error{
+    font-size: 14px;
+    color:red;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
