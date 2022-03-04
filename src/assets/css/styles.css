@@ -191,3 +191,45 @@ article.about{
     padding-bottom: 30px;
     text-align: justify;
 }
+/*  SECCION CON FORMULARIO  */
+.container{
+    padding:50px;
+    padding-top: 10px;
+}
+.container h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: 1px solid #023047;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+form{
+    width: 50%;
+    
+}
+form label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+form input[type="text"],
+form input[type="number"],
+form input[type="textarea"],
+form input[type="email"]{
+    width: 70%;
+    padding: 5px;
+}
+form button,
+form input[type="submit"]{
+    font-size: 17px;
+    padding: 5px;
+    display: block;
+    margin-top: 15px ;
+    border-radius: 15px;
+    background-color: #023047;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    width: 20%;
+}

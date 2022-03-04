@@ -3,7 +3,7 @@ import {HttpClient,HttpHeaders} from '@angular/common/http';
 import { Observable } from "rxjs/observable";
 import { Project } from "../models/project";
 import {Global} from './global';
-import { stringify } from "querystring";
+
 
 @Injectable()
     export class ProjecService{
