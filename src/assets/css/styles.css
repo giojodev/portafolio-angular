@@ -269,3 +269,21 @@ form input[disabled]{
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.message{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 50%;
+    padding: 5px;
+    border: 1px solid #eee;
+    
+}
+.success{
+    color: white;
+    background:green;
+}
+.success a{
+    color: white;
+}
+.failed{
+    background: red;
+    color: white;
+}
