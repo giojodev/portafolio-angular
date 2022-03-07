@@ -3,12 +3,14 @@
 
     <ul>
         <li *ngFor="let project of projects" class="project">
-            <div class="image">
+            <a [routerLink]="['/proyecto',project._id ]">
+                <div class="image">
                 <img src="{{url+'get-image/'+project.image}}"  *ngIf="project.image" alt="">
-            </div>
+                </div>
             
-            <h3>{{project.name}}</h3>
-            <p>{{project.langs}}</p>
+                <h3>{{project.name}}</h3>
+                <p>{{project.langs}}</p>
+            </a>
         </li>
     </ul>
 </div>

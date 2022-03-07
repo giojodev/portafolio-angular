@@ -31,5 +31,9 @@ import {Global} from './global';
             return this._http.get(this.url+'projects',{headers:this.headers});
         }
 
+        getProject(id:any):Observable<any>{
+            return this._http.get(this.url+'project/'+id,{headers:this.headers});
+        }
+
     }
     
