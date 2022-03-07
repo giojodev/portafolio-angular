@@ -25,5 +25,11 @@ import {Global} from './global';
 
             return this._http.post(this.url+'save-project',params,{headers:this.headers});
         }
+
+        getProjects():Observable<any>{
+
+            return this._http.get(this.url+'projects',{headers:this.headers});
+        }
+
     }
     
