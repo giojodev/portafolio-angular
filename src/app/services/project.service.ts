@@ -40,5 +40,10 @@ import {Global} from './global';
 
         }
 
+        updateProject(project:any):Observable<any>{
+            let params=JSON.stringify(project);
+            return this._http.put(this.url+'project/'+project._id,params,{headers:this.headers});
+        }
+
     }
     
