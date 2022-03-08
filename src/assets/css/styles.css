@@ -211,6 +211,21 @@ backdrop-filter: blur(5px);
 -webkit-backdrop-filter: blur(5px);
 border: 1px solid rgba(255, 255, 255, 0.3); */
 }
+.container .image{
+    float: left;
+    width: 47%;
+    
+}
+.container .image img{
+    width: 100%;
+    height: 460px;
+}
+.container .data{
+    font-family: 'DM';
+    float: left;
+    width: 48%;
+    margin-left: 25px;
+}
 .container h2{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-bottom: 1px solid #023047;
@@ -238,7 +253,8 @@ form input[type="email"]{
     padding: 5px;
 }
 form button,
-form input[type="submit"]{
+form input[type="submit"],
+.button-edit,.button-delete{
     font-size: 17px;
     padding: 10px;
     display: block;
@@ -252,7 +268,19 @@ form input[type="submit"]{
     border: 1px solid #011d2b;
     cursor: pointer;
 }
-
+.button-edit,.button-delete{
+    width: 20%;
+    text-decoration: none;
+    float: left;
+    margin-right: 10px;
+    text-align: center;
+} 
+.button-edit{
+    background: #0a9396;
+}
+.button-delete{
+    background: #e63946;
+}
 form button:hover,
 form input[type="submit"]:hover{
     font-size: 17px;
