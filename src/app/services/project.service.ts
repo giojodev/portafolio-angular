@@ -35,5 +35,10 @@ import {Global} from './global';
             return this._http.get(this.url+'project/'+id,{headers:this.headers});
         }
 
+        deleteProject(id:any):Observable<any>{
+            return this._http.delete(this.url+'project/'+id,{headers:this.headers});
+
+        }
+
     }
     
