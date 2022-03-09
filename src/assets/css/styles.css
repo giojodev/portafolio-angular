@@ -269,7 +269,7 @@ form input[type="submit"],
     cursor: pointer;
 }
 .button-edit,.button-delete{
-    width: 20%;
+    width: 35%;
     text-decoration: none;
     float: left;
     margin-right: 10px;
@@ -280,6 +280,12 @@ form input[type="submit"],
 }
 .button-delete{
     background: #e63946;
+}
+.button-edit:hover{
+    background: #3ee8eb;
+}
+.button-delete:hover{
+    background: #ff616f;
 }
 form button:hover,
 form input[type="submit"]:hover{
@@ -357,4 +363,9 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     width: 100%;
     height: 150px;
     overflow: hidden;
+}
+.confirm{
+    display: block;
+    font-weight: bold;
+    margin-top: 30px;
 }
