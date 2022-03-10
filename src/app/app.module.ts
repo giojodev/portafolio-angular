@@ -16,6 +16,7 @@ import { DetailComponent } from './components/detail/detail.component';
 import { EditComponent } from './components/edit/edit.component';
 
 import * as $ from 'jquery';
+import { SliderComponent } from './components/slider/slider.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,8 @@ import * as $ from 'jquery';
     ContactComponent,
     ErrorComponent,
     DetailComponent,
-    EditComponent
+    EditComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,

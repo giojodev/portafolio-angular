@@ -8,8 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+  public widthSlider:number;
+  public anchuratoSlider:any;
 
-  constructor() { }
+  constructor() {
+    this.widthSlider=0;
+    this.anchuratoSlider=0
+
+   }
 
   ngOnInit(): void {
    
@@ -17,13 +23,17 @@ export class ContactComponent implements OnInit {
     //   console.log("Test");
     // })
 
-    (<any>$('.galeria')).bxSlider({
-      mode: 'fade',
-      captions: true,
-      slideWidth: 1000
-    })
+    
   }
 
+  cargarSlider(){
+    
+    this.anchuratoSlider=this.widthSlider;
+    
+  }
+  resetearSlider(){
+    this.anchuratoSlider=null;
+  }
   
 
 }
