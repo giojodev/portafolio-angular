@@ -1,7 +1,11 @@
 <div class="container">
-
     <h1>Contacto</h1>
-    <h3>tamaño del slider</h3>
+    <div id="texto" #textos>
+        <p appResaltado >Esta es la pagina de contacto, puede enviarme cualquier duda</p>
+    </div>
+    
+    
+    <!-- <h3>tamaño del slider</h3>
     <input type="number" [(ngModel)]="widthSlider" (keyup.enter)="cargarSlider()">4
     <button (click)="cargarSlider()">Cargar Slider</button>
     <button (click)="resetearSlider()">Resetear Slider</button>
@@ -13,5 +17,5 @@
         (conseguirAutor)="getAutor($event)"></slider>
     </div>
     
-    <div *ngIf="autor">{{autor.nombre+ " "+ autor.web}}</div>
+    <div *ngIf="autor">{{autor.nombre+ " "+ autor.web}}</div> -->
 </div>

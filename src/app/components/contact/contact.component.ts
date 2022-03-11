@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ViewChild } from '@angular/core';
 
 
 
@@ -11,18 +11,21 @@ export class ContactComponent implements OnInit {
   public widthSlider:number;
   public anchuratoSlider:any;
   public autor:any;
+  
+  @ViewChild('textos',{static:true}) textos:any;
 
   constructor() {
     this.widthSlider=0;
     this.anchuratoSlider=0
     this.autor=0;
+
    }
 
   ngOnInit(): void {
-   
-    // $("#logo").click(function(){
-    //   console.log("Test");
-    // })
+    //Opcion angular
+  //  alert(document.querySelector('#texto')?.innerHTML);
+    
+  // console.log(this.textos.nativeElement.textContent);
 
     
   }

@@ -17,6 +17,7 @@ import { EditComponent } from './components/edit/edit.component';
 
 import * as $ from 'jquery';
 import { SliderComponent } from './components/slider/slider.component';
+import { ResaltadoDirective } from './resaltado.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,8 @@ import { SliderComponent } from './components/slider/slider.component';
     ErrorComponent,
     DetailComponent,
     EditComponent,
-    SliderComponent
+    SliderComponent,
+    ResaltadoDirective
   ],
   imports: [
     BrowserModule,
