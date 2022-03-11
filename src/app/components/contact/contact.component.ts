@@ -10,11 +10,12 @@ import { Component, OnInit } from '@angular/core';
 export class ContactComponent implements OnInit {
   public widthSlider:number;
   public anchuratoSlider:any;
+  public autor:any;
 
   constructor() {
     this.widthSlider=0;
     this.anchuratoSlider=0
-
+    this.autor=0;
    }
 
   ngOnInit(): void {
@@ -35,5 +36,8 @@ export class ContactComponent implements OnInit {
     this.anchuratoSlider=null;
   }
   
-
+  getAutor(event:any){
+    this.autor=event;
+  }
+ 
 }
